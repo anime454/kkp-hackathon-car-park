@@ -1,0 +1,10 @@
+Task: init be 
+- Create new folder call be for store the be code
+- Init project
+  tech-stack 
+    language: go 1.25
+    framework: fiberV2 
+    database: postgresql (orm design)
+  project structure
+    hexagonal architecture
+- Create new docker file for running local database
