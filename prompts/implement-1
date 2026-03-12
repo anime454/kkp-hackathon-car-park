@@ -1,0 +1,14 @@
+task: Implement-1
+
+BE:
+- Create new parking system includes
+    Realtime parking space that can show free and parked space 
+    Register service 
+    Calculate parking fee
+
+FE: Kiosk
+- Create an kiosk dashboard that showing 
+
+
+
+
