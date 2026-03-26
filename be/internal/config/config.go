@@ -9,6 +9,7 @@ import (
 type Config struct {
 	HTTP     HTTPConfig
 	Postgres PostgresConfig
+	Admin    AdminConfig
 }
 
 type HTTPConfig struct {
@@ -27,6 +28,11 @@ type PostgresConfig struct {
 	Password string
 	DBName   string
 	SSLMode  string
+}
+
+type AdminConfig struct {
+	Username string
+	Password string
 }
 
 func (c PostgresConfig) DSN() string {
@@ -54,6 +60,10 @@ func Load() Config {
 			Password: getEnv("POSTGRES_PASSWORD", "carpark"),
 			DBName:   getEnv("POSTGRES_DB", "carpark"),
 			SSLMode:  getEnv("POSTGRES_SSLMODE", "disable"),
+		},
+		Admin: AdminConfig{
+			Username: getEnv("ADMIN_USERNAME", "admin"),
+			Password: getEnv("ADMIN_PASSWORD", "admin123"),
 		},
 	}
 }

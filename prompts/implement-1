@@ -1,13 +1,25 @@
 task: Implement-1
 
-BE:
-- Create new parking system includes
-    Realtime parking space that can show free and parked space 
-    Register service 
+slot status 
+    - free
+    - parked
+    - close
+
+slot type 
+    - VIP
+    - normal
+
+- Service
+    Realtime parking space that can show free/using slot 
     Calculate parking fee
 
-FE: Kiosk
-- Create an kiosk dashboard that showing 
+- Kiosk Mode
+    - Showing a parking slot status
+    - Showing other information 
+
+- Management Mode
+    - Admin login system 
+    - Admin can edit parking slot status
 
 
 

@@ -26,3 +26,11 @@ func (r *CarParkRepository) FindByID(ctx context.Context, id string) (*domain.Ca
 	}
 	return &cp, nil
 }
+
+func (r *CarParkRepository) List(ctx context.Context) ([]domain.CarPark, error) {
+	var carParks []domain.CarPark
+	if err := r.db.WithContext(ctx).Order("created_at asc").Find(&carParks).Error; err != nil {
+		return nil, err
+	}
+	return carParks, nil
+}
