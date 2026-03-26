@@ -1,0 +1,7 @@
+Task: init fe
+- Create new folder call fe
+- Init project
+  tech-stack 
+    language: TypeScript
+    react + tailwind-css + MUI + TanStack Query + Vite
+    node version: 24

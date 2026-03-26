@@ -1,0 +1,26 @@
+task: Implement-1
+
+slot status 
+    - free
+    - parked
+    - close
+
+slot type 
+    - VIP
+    - normal
+
+- Service
+    Realtime parking space that can show free/using slot 
+    Calculate parking fee
+
+- Kiosk Mode
+    - Showing a parking slot status
+    - Showing other information 
+
+- Management Mode
+    - Admin login system 
+    - Admin can edit parking slot status
+
+
+
+
